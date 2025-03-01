@@ -1,6 +1,4 @@
-/* ------------------------- */
-/* BACKGROUND */
-/* ------------------------- */
+/* ------------------------- / / BACKGROUND / / ------------------------- */
 body {
     background-color: white;
     background-size: cover;
@@ -14,55 +12,7 @@ body {
     flex-direction: column;
 }
 
-/* ------------------------- */
-/* SACOLA */
-/* ------------------------- */
-.sacola-container {
-    position: relative;
-    margin: 20px auto;
-    z-index: 1;
-    max-width: 800px;
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-/* ------------------------- */
-/* BOtÃO DE COMPRAR TUDO */
-/* ------------------------- */
-#checkout-container button {
-    background-color: #282b29;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-    cursor: pointer;
-}
-
-#checkout-container button:hover {
-    background-color: #000000;
-    transform: scale(1.05);
-}
-
-#checkout-container button:active {
-    background-color: #000000;
-    transform: scale(0.98);
-}
-
-#checkout-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-/* ------------------------- */
-/* ÍCONES DO NAVBAR */
-/* ------------------------- */
+/* ------------------------- / / ÍCONES DO NAVBAR / / ------------------------- */
 .nav-icon {
     width: 20px;
     height: auto;
@@ -70,192 +20,91 @@ body {
     vertical-align: middle;
 }
 
-/* ------------------------- */
-/* CARRINHO FIXADO */
-/* ------------------------- */
-.cart-icon {
-    display: none;
+/* Logo Admin */
+.admin-text {
+    font-size: 1.1rem;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    margin-left: 10px;
+    /* Espaçamento à esquerda */
+    color: #ffffff;
+    /* Cor do texto */
 }
 
-.cart-icon-img {
-    display: none;
-}
-
-.cart-count {
-    display: none;
-}
-
-
-
-.btn-primary {
-    background-color: #28a745;
-    border-color: #28a745;
-}
-
-/*---------------------------------------------*/
-/* MARCAS */
-/*---------------------------------------------*/
-
-.upload-container {
-    display: inline-block;
-    margin: 10px;
-}
-
-.upload-container img {
-    border-radius: 100%;
-    margin-right: 15px;
-    max-width: 200px;
-    border: 5px solid rgb(184, 184, 184);
-
-}
-
-.upload-button:hover {
-    background-color: #0056b3;
-}
-
-/* TÍTULO */
-.title {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* ADICIONAR ITEM NO CONTAINER */
-.add-item-container {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 20px;
-    max-width: 300px;
-    margin: auto;
-    margin-top: 50px;
+/* --------------------------------------------- */
+/* FORMULÁRIO DE LOGIN */
+/* --------------------------------------------- */
+.page-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-
-
-/* UPLOAD CONTAINER */
-.upload-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.upload-button:hover {
-    background-color: #0056b3;
-}
-
-
-
-/* ADICIONAR */
-/*---------------------------------------------*/
-.upload-container {
-    position: relative;
-    display: inline-block;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.upload-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.upload-button:hover {
-    background-color: #218838;
-}
-
-/* MODAL de adicionar imagens */
-.image-upload-group {
-    border: 1px solid #23598f;
-    border-radius: 0.375rem;
-    padding: 1rem;
+    /* Altera de flex-start para center para centralizar verticalmente */
+    min-height: 100vh;
+    padding: 30px;
     background-color: #f8f9fa;
-    position: relative;
-    margin-bottom: 1rem;
 }
 
-h2 {
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    /* Remove a margem superior para centralizar verticalmente */
+}
+
+.logo-container img {
+    width: 150px;
+    /* Tamanho padrão da logo */
+    height: 150px;
+    /* Tamanho padrão da logo */
+    border-radius: 50%;
+    /* Torna a imagem redonda */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste bem ao tamanho */
+}
+
+.title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
     font-weight: bold;
 }
 
-.modal-body {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+/* ESTILOS DOS CAMPOS DO FORMULÁRIO */
+.form-label {
+    font-weight: bold;
+    color: #555;
 }
 
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
+.form-control {
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
 }
 
-.preview-image {
-    max-width: 100px;
-    height: auto;
-    margin-top: 10px;
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
 
-.btn-add {
-    background-color: #131413;
-    color: #fff;
-}
-
-.btn-add[disabled] {
-    background-color: #6c757d;
-}
-
-.remove-preview {
-    margin-top: 5px;
-    cursor: pointer;
-    color: #dc3545;
-}
-
-/* ----------------------------------------------------------------------------------- */
-/* REMOVER */
-/* ----------------------------------------------------------------------------------- */
-
-.modal-dialog {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 1rem);
-    margin: 1rem auto;
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
+/* ESTILOS DO BOTÃO */
+.btn-primary {
+    background-color: #28a745;
+    /* Cor padrão */
+    border-color: #28a745;
+    font-size: 1.2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
 
-/* ------------------------- */
-/* RODAPÉ */
-/* ------------------------- */
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* ------------------------- / / RODAPÉ / / ------------------------- */
 footer {
     background: #000000;
     color: #fff;
@@ -290,61 +139,147 @@ footer .socials a {
     transform: scale(1.2);
 }
 
-/* -------------------------------------------------------------------------------------------------------*/
-/* FORMULÁRIO DE LOGIN */
-/* ------------------------------------------------------------------------------------------------------- */
-.page-container {
-    display: flex;
-    justify-content: center; /* Alinha horizontalmente ao centro */
-    align-items: center; /* Alinha verticalmente ao centro */
-    height: 100vh; /* Define a altura do contêiner como 100% da altura da tela */
-    background-color: #f8f9fa; /* Cor de fundo opcional para toda a página */
+/* ---------------------------------------------------------------------------------------- / / PAINEL DE ADMINISTRAÇÃO / / ---------------------------------------------------------------------------------------- */
+main {
+    padding: 20px;
 }
 
-.login-container {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%; /* Garante que o contêiner seja responsivo */
+h1 {
+    margin-bottom: 15px;
 }
 
-.title {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: bold;
+/* Cartões */
+.card {
+    background: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-/* ESTILOS DOS CAMPOS DO FORMULÁRIO */
-.form-label {
-    font-weight: bold;
-    color: #555;
-}
-
-.form-control {
-    border-radius: 10px;
-    border: 1px solid #ccc;
-}
-
-.form-control:focus {
-    border-color: #28a745;
-    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
-}
-
-/* ESTILOS DO BOTÃO */
-.btn-primary {
-    background-color: #28a745;
-    border-color: #28a745;
-    font-size: 1.2rem;
-    border-radius: 10px;
+.card-header {
+    background: #2d2f31;
+    color: white;
     padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.btn-primary:hover {
-    background-color: #218838;
-    border-color: #1e7e34;
+/* Conteúdo dos cartões */
+.card-content {
+    transition: max-height 2.0s ease-out;
 }
 
+
+.logo-preview img {
+    width: 100px;
+    height: auto;
+}
+
+/* Expandir */
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background: none;
+}
+
+button img {
+    width: 20px;
+}
+
+/* Categorias */
+.category {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.category-header img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Esconder Inicialmente */
+.toggle-content {
+    display: none; /* Ocultar o conteúdo por padrão */
+}
+
+.toggle-content.active {
+    display: block; /* Mostrar o conteúdo quando a classe "active" estiver presente */
+}
+
+/* ------------------------------------------- */
+/* CATALOGO */
+/* ------------------------------------------- */
+
+/* Linha de separação */
+.separator {
+    border: 1px solid #d3d3d3;
+    width: 95%;
+    margin: 20px auto;
+}
+
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.upload-container img {
+    border-radius: 50%;
+    padding: 5px;
+    max-width: 100px;
+    height: auto;
+}
+
+.icon-group {
+    display: flex;
+    margin-left: auto;
+
+}
+
+.icon {
+    margin-left: 15px;
+    /* Espaçamento entre os ícones */
+    cursor: pointer;
+    /* Mudar o cursor para indicar que é clicável */
+    transition: transform 0.2s;
+    /* Efeito de transição suave */
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    /* Aumentar um pouco o ícone ao passar o mouse */
+}
+
+.toggle-btn {
+    background: none;
+    /* Remover fundo do botão */
+    border: none;
+    /* Remover borda do botão */
+    cursor: pointer;
+    /* Mudar o cursor para indicar que é clicável */
+}
+
+.toggle-btn img {
+    width: 20px;
+    /* Tamanho do ícone de expandir */
+    height: auto;
+    /* Manter a proporção do ícone */
+}
+
+/* Estilizando os ícones */
+.icon img {
+    width: 40px;
+    /* Aumentar o tamanho do ícone */
+    height: auto;
+    /* Manter a proporção do ícone */
+    transition: filter 0.2s;
+    /* Efeito de transição suave na cor */
+}
+
+.icon img:hover {
+    filter: brightness(0.7);
+}

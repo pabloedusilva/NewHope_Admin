@@ -85,3 +85,52 @@ function setupModal(modalIndex) {
 setupModal(1);
 setupModal(2);
 setupModal(3);
+
+
+// Painel Administração
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Seleciona todos os botões de alternância das categorias
+    const toggleButtons = document.querySelectorAll(".toggle-btn");
+
+    toggleButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const img = button.querySelector("img");
+            if (img.src.includes("arrow-down.png")) {
+                img.src = "icons/arrow-up.png";
+            } else {
+                img.src = "icons/arrow-down.png";
+            }
+        });
+    });
+
+    // Ações dos botões
+    const addButtons = document.querySelectorAll(".add-btn");
+    const removeButtons = document.querySelectorAll(".remove-btn");
+
+    addButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            alert("Função de adicionar ainda não implementada!");
+        });
+    });
+
+    removeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            alert("Função de remover ainda não implementada!");
+        });
+    });
+});
+
+
+// JavaScript para expandir/recolher seções
+document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.closest('.card').querySelector('.toggle-content');
+        // Alternar a exibição da seção
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block"; // Mostrar conteúdo
+        } else {
+            content.style.display = "none"; // Ocultar conteúdo
+        }
+    });
+});
