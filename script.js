@@ -96,10 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleButtons.forEach(button => {
         button.addEventListener("click", () => {
             const img = button.querySelector("img");
-            if (img.src.includes("arrow-down.png")) {
-                img.src = "icons/arrow-up.png";
+            if (img.src.includes("icons/seta-para-baixo.svg")) {
+                img.src = "icons/seta-para-cima.svg";
             } else {
-                img.src = "icons/arrow-down.png";
+                img.src = "icons/seta-para-baixo.svg";
             }
         });
     });

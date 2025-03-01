@@ -6,10 +6,9 @@ body {
     background-position: center;
     margin: 0;
     padding: 0;
-    height: auto;
-    min-height: 100vh;
+    height: 100vh; /* Garantir que ocupa toda a altura da janela */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Flex-direction para coluna */
 }
 
 /* ------------------------- / / ÍCONES DO NAVBAR / / ------------------------- */
@@ -23,12 +22,9 @@ body {
 /* Logo Admin */
 .admin-text {
     font-size: 1.1rem;
-    /* Tamanho da fonte */
     font-weight: bold;
     margin-left: 10px;
-    /* Espaçamento à esquerda */
     color: #ffffff;
-    /* Cor do texto */
 }
 
 /* --------------------------------------------- */
@@ -38,7 +34,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Altera de flex-start para center para centralizar verticalmente */
     min-height: 100vh;
     padding: 30px;
     background-color: #f8f9fa;
@@ -51,18 +46,6 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
-    /* Remove a margem superior para centralizar verticalmente */
-}
-
-.logo-container img {
-    width: 150px;
-    /* Tamanho padrão da logo */
-    height: 150px;
-    /* Tamanho padrão da logo */
-    border-radius: 50%;
-    /* Torna a imagem redonda */
-    object-fit: cover;
-    /* Garante que a imagem se ajuste bem ao tamanho */
 }
 
 .title {
@@ -92,7 +75,6 @@ body {
 /* ESTILOS DO BOTÃO */
 .btn-primary {
     background-color: #28a745;
-    /* Cor padrão */
     border-color: #28a745;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -110,7 +92,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 2rem 0rem;
-    margin-top: auto;
+    margin-top: auto; /* Faz o rodapé se empurrar para o final */
 }
 
 footer a {
@@ -142,6 +124,7 @@ footer .socials a {
 /* ---------------------------------------------------------------------------------------- / / PAINEL DE ADMINISTRAÇÃO / / ---------------------------------------------------------------------------------------- */
 main {
     padding: 20px;
+    flex: 1; /* Permite que o main ocupe o espaço disponível */
 }
 
 h1 {
@@ -170,7 +153,6 @@ h1 {
     transition: max-height 2.0s ease-out;
 }
 
-
 .logo-preview img {
     width: 100px;
     height: auto;
@@ -195,11 +177,6 @@ button img {
     padding: 8px;
 }
 
-.category-header img {
-    width: 40px;
-    margin-right: 10px;
-}
-
 /* Esconder Inicialmente */
 .toggle-content {
     display: none; /* Ocultar o conteúdo por padrão */
@@ -220,7 +197,6 @@ button img {
     margin: 20px auto;
 }
 
-
 .upload-container {
     display: flex;
     align-items: center;
@@ -230,56 +206,152 @@ button img {
 .upload-container img {
     border-radius: 50%;
     padding: 5px;
-    max-width: 100px;
+    max-width: 100%;
     height: auto;
 }
 
 .icon-group {
     display: flex;
     margin-left: auto;
-
 }
 
 .icon {
     margin-left: 15px;
-    /* Espaçamento entre os ícones */
     cursor: pointer;
-    /* Mudar o cursor para indicar que é clicável */
     transition: transform 0.2s;
-    /* Efeito de transição suave */
 }
 
 .icon:hover {
     transform: scale(1.1);
-    /* Aumentar um pouco o ícone ao passar o mouse */
 }
 
 .toggle-btn {
     background: none;
-    /* Remover fundo do botão */
     border: none;
-    /* Remover borda do botão */
     cursor: pointer;
-    /* Mudar o cursor para indicar que é clicável */
 }
 
 .toggle-btn img {
     width: 20px;
-    /* Tamanho do ícone de expandir */
     height: auto;
-    /* Manter a proporção do ícone */
 }
 
 /* Estilizando os ícones */
 .icon img {
     width: 40px;
-    /* Aumentar o tamanho do ícone */
     height: auto;
-    /* Manter a proporção do ícone */
     transition: filter 0.2s;
-    /* Efeito de transição suave na cor */
 }
 
 .icon img:hover {
     filter: brightness(0.7);
+}
+
+
+
+
+/* ------------------------- / / ESTILOS DOS MODAIS / / ------------------------- */
+
+/* Estilos gerais para a modal */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o cabeçalho da modal */
+.modal-header {
+    background-color: #257425;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Estilos para o título da modal */
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilos para o corpo da modal */
+.modal-body {
+    padding: 20px;
+}
+
+/* Estilos para grupos de upload de imagem */
+.image-upload-group {
+    margin-bottom: 20px;
+}
+
+.image-upload-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.preview-image {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para o botão de remover pré-visualização */
+.remove-preview {
+    display: inline-block;
+    margin-top: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+/* Estilos para os campos de entrada */
+.form-control {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para o botão de adicionar */
+.btn-add {
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Certifique-se de que o botão é inline-block */
+    margin: 0 auto; /* Adicione esta linha */
+}
+
+
+.btn-add:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Estilos para o rodapé da modal */
+.modal-footer {
+    padding: 15px;
+    display: flex; /* Adicione esta linha */
+    justify-content: center; /* Adicione esta linha */
+}
+.modal-footer-content .btn {
+    margin: 0 10px; /* Adiciona um espaço entre os botões */
+}
+
+
+/* Estilos para o botão de cancelar */
+.btn-secondary {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #830000;
 }

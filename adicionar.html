@@ -15,325 +15,344 @@
     <header class="bg-dark text-white py-2">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <img src="imagens/Logo Natal.png" height="60px" alt="logo" /> <!-- Logo menor -->
-                <span class="ml-2 admin-text">Administrador</span> <!-- Texto ao lado da logo -->
+                <img src="imagens/Logo Natal.png" height="60px" alt="logo" />
+                <span class="ml-2 admin-text">Administrador</span>
             </div>
             <div class="d-flex align-items-center">
-                <!-- Ícone de Sair -->
                 <a href="#" class="text-white ml-3" title="Sair">
                     <img src="icons/sair.svg" height="30px" alt="Ícone de Sair" />
-                    <!-- Substitua o SVG do Bootstrap pelo seu SVG -->
                 </a>
             </div>
         </div>
     </header>
 
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
-
     <!-- Conteúdo principal -->
-    <main>
+    <main class="flex-grow-1">
         <h1>Painel de Administração</h1>
 
         <!-- Seção para mudar o logo -->
         <section class="card">
             <div class="card-header">
                 Mudar Logo
-                <button class="toggle-btn"><img src="icons/arrow-down.png" alt="Expandir"></button>
+                <button class="toggle-btn"><img src="icons/seta-para-baixo.svg" alt="Expandir"></button>
             </div>
             <div class="card-content toggle-content">
                 <div class="logo-preview">
                     <img src="imagens/Logo.png" alt="Logo Atual">
                 </div>
                 <div class="actions">
-                    <button class="add-btn"><img src="icons/add.png" alt="Adicionar"></button>
-                    <button class="edit-btn"><img src="icons/edit.png" alt="Editar"></button>
+                    <button class="add-btn"><img src="icons/adicionar.svg" alt="Adicionar" width="24"
+                            height="24"></button>
+                    <button class="edit-btn"><img src="icons/editar.svg" alt="Editar" width="24" height="24"></button>
                 </div>
             </div>
         </section>
 
-       <!-- Seção do Catálogo -->
-<section class="card">
-    <div class="card-header d-flex justify-content-between align-items-center">
-        Catálogo
-        <button class="toggle-btn"><img src="icons/arrow-down.png" alt="Expandir"></button>
-    </div>
-    <div class="card-content toggle-content" style="display: none;">
-        <section>
-            <!-- CHRONIC -->
-            <div class="upload-container">
-                <img src="imagens/Logos/Chronic.png" alt="Marca 1" class="img-fluid" style="max-width: 100px;" />
-                <div class="icon-group">
-                    <div class="icon" data-bs-toggle="modal" data-bs-target="#uploadModal1">
-                        <img src="icons/adicionar.png" alt="Upload" width="24" height="24" />
-                    </div>
-                    <div class="icon" aria-label="Visualizar">
-                        <img src="icons/visualizar.svg" alt="Visualizar" width="24" height="24" />
-                    </div>
-                    <div class="icon" aria-label="Remover">
-                        <img src="icons/remover.svg" alt="Remover" width="24" height="24" />
-                    </div>
-                </div>
+        <!-- Seção do Catálogo -->
+        <section class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                Catálogo
+                <button class="toggle-btn"><img src="icons/seta-para-baixo.svg" alt="Expandir"></button>
             </div>
+            <div class="card-content toggle-content" style="display: none;">
+                <section>
+                    <!-- CHRONIC -->
+                    <div class="upload-container">
+                        <img src="imagens/Logos/Chronic.png" alt="Marca 1" class="img-fluid"
+                            style="max-width: 100px;" />
+                        <div class="icon-group">
+                            <div class="icon" data-bs-toggle="modal" data-bs-target="#uploadModal1">
+                                <img src="icons/adicionar.svg" alt="Upload" width="24" height="24" />
+                            </div>
+                            <div class="icon" aria-label="Visualizar">
+                                <img src="icons/visualizar.svg" alt="Visualizar" width="24" height="24" />
+                            </div>
+                            <div class="icon" data-bs-toggle="modal" data-bs-target="#removeProductModal"
+                                aria-label="Remover">
+                                <img src="icons/remover.svg" alt="Remover" width="24" height="24" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="separator" />
+
+                    <!-- BLESSED CHOICE -->
+                    <div class="upload-container">
+                        <img src="imagens/Logos/Blessed.png" alt="Marca 2" class="img-fluid"
+                            style="max-width: 100px;" />
+                        <div class="icon-group">
+                            <div class="icon" data-bs-toggle="modal" data-bs-target="#uploadModal2">
+                                <img src="icons/adicionar.svg" alt="Upload" width="24" height="30" />
+                            </div>
+                            <div class="icon" aria-label="Visualizar">
+                                <img src="icons/visualizar.svg" alt="Visualizar" width="24" height="24" />
+                            </div>
+                            <div class="icon" data-bs-toggle="modal" data-bs-target="#removeProductModal"
+                                aria-label="Remover">
+                                <img src="icons/remover.svg" alt="Remover" width="24" height="24" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="separator" />
+
+                    <!-- CAMISAS DE TIME -->
+                    <div class="upload-container">
+                        <img src="imagens/Logos/Times.png" alt="Marca 3" class="img-fluid" style="max-width: 100px;" />
+                        <div class="icon-group">
+                            <div class="icon" data-bs-toggle="modal" data-bs-target="#uploadModal3">
+                                <img src="icons/adicionar.svg" alt="Upload" width="24" height="24" />
+                            </div>
+                            <div class="icon" aria-label="Visualizar">
+                                <img src="icons/visualizar.svg" alt="Visualizar" width="24" height="24" />
+                            </div>
+                            <div class="icon" data-bs-toggle="modal" data-bs-target="#removeProductModal"
+                                aria-label="Remover">
+                                <img src="icons/remover.svg" alt="Remover" width="24" height="24" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <hr class="separator" />
 
-                <!-- BLESSED CHOICE -->
-                <div class="upload-container">
-                    <img src="imagens/Logos/Blessed.png" alt="Marca 2" class="img-fluid"
-                        style="max-width: 100px;" />
-                    <div class="icon-group">
-                        <div class="icon" data-bs-toggle="modal" data-bs-target="#uploadModal2">
-                            <!-- Ícone de Upload -->
-                            <img src="icons/adicionar.png" alt="Upload" width="24" height="24" />
-                        </div>
-                        <div class="icon" aria-label="Visualizar">
-                            <!-- Ícone de Visualizar -->
-                            <img src="icons/visualizar.svg" alt="Visualizar" width="24" height="24" />
-                        </div>
-                        <div class="icon" aria-label="Remover">
-                            <!-- Ícone de Remover -->
-                            <img src="icons/remover.svg" alt="Remover" width="24" height="24" />
-                        </div>
-                    </div>
+                <!-- Adicionar novas marcas -->
+                <div class="add-marca">
+                    <button class="add-marca-btn">
+                        <img src="icons/adicionar.svg" alt="Adicionar"> Adicionar marcas
+                    </button>
                 </div>
-
-                <hr class="separator" />
-
-                <!-- CAMISAS DE TIME -->
-                <div class="upload-container">
-                    <img src="imagens/Logos/Times.png" alt="Marca 3" class="img-fluid" style="max-width: 100px;" />
-                    <div class="icon-group">
-                        <div class="icon" data-bs-toggle="modal" data-bs-target="#uploadModal3">
-                            <!-- Ícone de Upload -->
-                            <img src="icons/adicionar.png" alt="Upload" width="24" height="24" />
-                        </div>
-                        <div class="icon" aria-label="Visualizar">
-                            <!-- Ícone de Visualizar -->
-                            <img src="icons/visualizar.svg" alt="Visualizar" width="24" height="24" />
-                        </div>
-                        <div class="icon" aria-label="Remover">
-                            <!-- Ícone de Remover -->
-                            <img src="icons/remover.svg" alt="Remover" width="24" height="24" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <hr class="separator" />
-
-            <!-- Adicionar novas marcas -->
-            <div class="add-marca">
-                <button class="add-marca-btn">
-                    <img src="icons/add.png" alt="Adicionar"> Adicionar marcas
-                </button>
             </div>
+        </section>
+
+        <!-- MODAL REMOVER PRODUTOS -->
+        <div class="modal fade" id="removeProductModal" tabindex="-1" aria-labelledby="removeProductLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="removeProductLabel">Remover Produto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="productSelect" class="form-label">Selecionar Produto</label>
+                        <select id="productSelect" class="form-control">
+                            <option value="" disabled selected>Selecione um produto</option>
+                            <option value="produto1">Produto 1</option>
+                            <option value="produto2">Produto 2</option>
+                            <option value="produto3">Produto 3</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="removeButton">Remover</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL MARCA 1 -->
+        <div class="modal fade" id="uploadModal1" tabindex="-1" aria-labelledby="uploadModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="uploadModalLabel1">Adicionar Produto - Chronic</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="image-upload-group front-container"
+                            style="border: 1px solid #ccc; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+                            <label for="frontImage1">Frente</label>
+                            <input type="file" id="frontImage1" accept="image/*" class="form-control">
+                            <img id="frontPreview1" class="preview-image" alt="Pré-visualização da imagem da frente"
+                                style="display: none;">
+                            <span id="removeFront1" class="remove-preview" style="display: none;">Remover</span>
+                        </div>
+
+                        <div class="image-upload-group back-container"
+                            style="border: 1px solid #ccc; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+                            <label for="backImage1">Costas</label>
+                            <input type="file" id="backImage1" accept="image/*" class="form-control">
+                            <img id="backPreview1" class="preview-image" alt="Pré-visualização da imagem de trás"
+                                style="display: none;">
+                            <span id="removeBack1" class="remove-preview" style="display: none;">Remover</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productName1">Nome do Produto</label>
+                            <input type="text" id="productName1" class="form-control" placeholder="Nome do produto"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productDescription1">Descrição</label>
+                            <textarea id="productDescription1" class="form-control" placeholder="Descrição do produto"
+                                rows="3" required></textarea>
+                        </div>
+
+                        <select id="price1" class="form-control">
+                            <option value="" disabled selected>Selecione o Valor</option>
+                            <option value="59.90">R$ 59,90</option>
+                            <option value="69.90">R$ 69,90</option>
+                            <option value="164.90">R$ 164,90</option>
+                            <option value="add">Adicionar Novo Valor</option>
+                        </select>
+                        <input type="number" id="newPrice1" class="form-control" placeholder="Novo Valor" min="0"
+                            step="0.01" style="display: none;">
+
+                        <select id="size1" class="form-control">
+                            <option value="" disabled selected>Selecione o Tamanho Disponível</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-footer-content">
+                            <button id="addButton1" class="btn btn-add" disabled>Adicionar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL MARCA 2 -->
+        <div class="modal fade" id="uploadModal2" tabindex="-1" aria-labelledby="uploadModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="uploadModalLabel2">Adicionar Produto - Blessed</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="image-upload-group front-container"
+                            style="border: 1px solid #ccc; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+                            <label for="frontImage2">Frente</label>
+                            <input type="file" id="frontImage2" accept="image/*" class="form-control">
+                            <img id="frontPreview2" class="preview-image" alt="Pré-visualização da imagem da frente"
+                                style="display: none;">
+                            <span id="removeFront2" class="remove-preview" style="display: none;">Remover</span>
+                        </div>
+
+                        <div class="image-upload-group back-container"
+                            style="border: 1px solid #ccc; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+                            <label for="backImage2">Costas</label>
+                            <input type="file" id="backImage2" accept="image/*" class="form-control">
+                            <img id="backPreview2" class="preview-image" alt="Pré-visualização da imagem de trás"
+                                style="display: none;">
+                            <span id="removeBack2" class="remove-preview" style="display: none;">Remover</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productName2">Nome do Produto</label>
+                            <input type="text" id="productName2" class="form-control" placeholder="Nome do produto"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productDescription2">Descrição</label>
+                            <textarea id="productDescription2" class="form-control" placeholder="Descrição do produto"
+                                rows="3" required></textarea>
+                        </div>
+
+                        <select id="price2" class="form-control">
+                            <option value="" disabled selected>Selecione o Valor</option>
+                            <option value="59.90">R$ 59,90</option>
+                            <option value="69.90">R$ 69,90</option>
+                            <option value="164.90">R$ 164,90</option>
+                            <option value="add">Adicionar Novo Valor</option>
+                        </select>
+                        <input type="number" id="newPrice2" class="form-control" placeholder="Novo Valor" min="0"
+                            step="0.01" style="display: none;">
+
+                        <select id="size2" class="form-control">
+                            <option value="" disabled selected>Selecione o Tamanho Disponível</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-footer-content">
+                            <button id="addButton2" class="btn btn-add" disabled>Adicionar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL MARCA 3 -->
+        <div class="modal fade" id="uploadModal3" tabindex="-1" aria-labelledby="uploadModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="uploadModalLabel3">Adicionar Produto - Times</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="image-upload-group front-container"
+                            style="border: 1px solid #ccc; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+                            <label for="frontImage3">Frente</label>
+                            <input type="file" id="frontImage3" accept="image/*" class="form-control">
+                            <img id="frontPreview3" class="preview-image" alt="Pré-visualização da imagem da frente"
+                                style="display: none;">
+                            <span id="removeFront3" class="remove-preview" style="display: none;">Remover</span>
+                        </div>
+
+                        <div class="image-upload-group back-container"
+                            style="border: 1px solid #ccc; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+                            <label for="backImage3">Costas</label>
+                            <input type="file" id="backImage3" accept="image/*" class="form-control">
+                            <img id="backPreview3" class="preview-image" alt="Pré-visualização da imagem de trás"
+                                style="display: none;">
+                            <span id="removeBack3" class="remove-preview" style="display: none;">Remover</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productName3">Nome do Produto</label>
+                            <input type="text" id="productName3" class="form-control" placeholder="Nome do produto"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productDescription3">Descrição</label>
+                            <textarea id="productDescription3" class="form-control" placeholder="Descrição do produto"
+                                rows="3" required></textarea>
+                        </div>
+
+                        <select id="price3" class="form-control">
+                            <option value="" disabled selected>Selecione o Valor</option>
+                            <option value="59.90">R$ 59,90</option>
+                            <option value="69.90">R$ 69,90</option>
+                            <option value="164.90">R$ 164,90</option>
+                            <option value="add">Adicionar Novo Valor</option>
+                        </select>
+                        <input type="number" id="newPrice3" class="form-control" placeholder="Novo Valor" min="0"
+                            step="0.01" style="display: none;">
+
+                        <select id="size3" class="form-control">
+                            <option value="" disabled selected>Selecione o Tamanho Disponível</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-footer-content">
+                            <button id="addButton3" class="btn btn-add" disabled>Adicionar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
-    <!-- MODAL MARCA 1 -->
-    <div class="modal fade" id="uploadModal1" tabindex="-1" aria-labelledby="uploadModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="uploadModalLabel1">Adicionar Produto - Chronic</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Campos de Upload de Imagem -->
-                    <div class="image-upload-group">
-                        <label for="frontImage1">Frente</label>
-                        <input type="file" id="frontImage1" accept="image/*" class="form-control">
-                        <img id="frontPreview1" class="preview-image" alt="Pré-visualização da imagem da frente"
-                            style="display: none;">
-                        <span id="removeFront1" class="remove-preview" style="display: none;">Remover</span>
-                    </div>
-
-                    <div class="image-upload-group">
-                        <label for="backImage1">Costas</label>
-                        <input type="file" id="backImage1" accept="image/*" class="form-control">
-                        <img id="backPreview1" class="preview-image" alt="Pré-visualização da imagem de trás"
-                            style="display: none;">
-                        <span id="removeBack1" class="remove-preview" style="display: none;">Remover</span>
-                    </div>
-
-                    <!-- Novo Campo: Nome do Produto -->
-                    <div class="form-group">
-                        <label for="productName1">Nome do Produto</label>
-                        <input type="text" id="productName1" class="form-control" placeholder="Nome do produto"
-                            required>
-                    </div>
-
-                    <!-- Novo Campo: Descrição -->
-                    <div class="form-group">
-                        <label for="productDescription1">Descrição</label>
-                        <textarea id="productDescription1" class="form-control" placeholder="Descrição do produto"
-                            rows="3" required></textarea>
-                    </div>
-
-                    <select id="price1" class="form-control">
-                        <option value="" disabled selected>Selecione o Valor</option>
-                        <option value="59.90">R$ 59,90</option>
-                        <option value="69.90">R$ 69,90</option>
-                        <option value="164.90">R$ 164,90</option>
-                        <option value="add">Adicionar Novo Valor</option>
-                    </select>
-                    <input type="number" id="newPrice1" class="form-control" placeholder="Novo Valor" min="0"
-                        step="0.01" style="display: none;">
-
-                    <select id="size1" class="form-control">
-                        <option value="" disabled selected>Selecione o Tamanho Disponível</option>
-                        <option value="P">P</option>
-                        <option value="M">M</option>
-                        <option value="G">G</option>
-                        <option value="GG">GG</option>
-                    </select>
-
-                    <button id="addButton1" class="btn btn-add" disabled>Adicionar</button>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL MARCA 2 -->
-    <div class="modal fade" id="uploadModal2" tabindex="-1" aria-labelledby="uploadModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="uploadModalLabel2">Adicionar Produto - Blessed</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Campos de Upload de Imagem -->
-                    <div class="image-upload-group">
-                        <label for="frontImage2">Frente</label>
-                        <input type="file" id="frontImage2" accept="image/*" class="form-control">
-                        <img id="frontPreview2" class="preview-image" alt="Pré-visualização da imagem da frente"
-                            style="display: none;">
-                        <span id="removeFront2" class="remove-preview" style="display: none;">Remover</span>
-                    </div>
-
-                    <div class="image-upload-group">
-                        <label for="backImage2">Costas</label>
-                        <input type="file" id="backImage2" accept="image/*" class="form-control">
-                        <img id="backPreview2" class="preview-image" alt="Pré-visualização da imagem de trás"
-                            style="display: none;">
-                        <span id="removeBack2" class="remove-preview" style="display: none;">Remover</span>
-                    </div>
-
-                    <!-- Novo Campo: Nome do Produto -->
-                    <div class="form-group">
-                        <label for="productName2">Nome do Produto</label>
-                        <input type="text" id="productName2" class="form-control" placeholder="Nome do produto"
-                            required>
-                    </div>
-
-                    <!-- Novo Campo: Descrição -->
-                    <div class="form-group">
-                        <label for="productDescription2">Descrição</label>
-                        <textarea id="productDescription2" class="form-control" placeholder="Descrição do produto"
-                            rows="3" required></textarea>
-                    </div>
-
-                    <select id="price2" class="form-control">
-                        <option value="" disabled selected>Selecione o Valor</option>
-                        <option value="59.90">R$ 59,90</option>
-                        <option value="69.90">R$ 69,90</option>
-                        <option value="164.90">R$ 164,90</option>
-                        <option value="add">Adicionar Novo Valor</option>
-                    </select>
-                    <input type="number" id="newPrice2" class="form-control" placeholder="Novo Valor" min="0"
-                        step="0.01" style="display: none;">
-
-                    <select id="size2" class="form-control">
-                        <option value="" disabled selected>Selecione o Tamanho Disponível</option>
-                        <option value="P">P</option>
-                        <option value="M">M</option>
-                        <option value="G">G</option>
-                        <option value="GG">GG</option>
-                    </select>
-
-                    <button id="addButton2" class="btn btn-add" disabled>Adicionar</button>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL MARCA 3 -->
-    <div class="modal fade" id="uploadModal3" tabindex="-1" aria-labelledby="uploadModalLabel3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="uploadModalLabel3">Adicionar Produto - Times</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Campos de Upload de Imagem -->
-                    <div class="image-upload-group">
-                        <label for="frontImage3">Frente</label>
-                        <input type="file" id="frontImage3" accept="image/*" class="form-control">
-                        <img id="frontPreview3" class="preview-image" alt="Pré-visualização da imagem da frente"
-                            style="display: none;">
-                        <span id="removeFront3" class="remove-preview" style="display: none;">Remover</span>
-                    </div>
-
-                    <div class="image-upload-group">
-                        <label for="backImage3">Costas</label>
-                        <input type="file" id="backImage3" accept="image/*" class="form-control">
-                        <img id="backPreview3" class="preview-image" alt="Pré-visualização da imagem de trás"
-                            style="display: none;">
-                        <span id="removeBack3" class="remove-preview" style="display: none;">Remover</span>
-                    </div>
-
-                    <!-- Novo Campo: Nome do Produto -->
-                    <div class="form-group">
-                        <label for="productName3">Nome do Produto</label>
-                        <input type="text" id="productName3" class="form-control" placeholder="Nome do produto"
-                            required>
-                    </div>
-
-                    <!-- Novo Campo: Descrição -->
-                    <div class="form-group">
-                        <label for="productDescription3">Descrição</label>
-                        <textarea id="productDescription3" class="form-control" placeholder="Descrição do produto"
-                            rows="3" required></textarea>
-                    </div>
-
-                    <select id="price3" class="form-control">
-                        <option value="" disabled selected>Selecione o Valor</option>
-                        <option value="59.90">R$ 59,90</option>
-                        <option value="69.90">R$ 69,90</option>
-                        <option value="164.90">R$ 164,90</option>
-                        <option value="add">Adicionar Novo Valor</option>
-                    </select>
-                    <input type="number" id="newPrice3" class="form-control" placeholder="Novo Valor" min="0"
-                        step="0.01" style="display: none;">
-
-                    <select id="size3" class="form-control">
-                        <option value="" disabled selected>Selecione o Tamanho Disponível</option>
-                        <option value="P">P</option>
-                        <option value="M">M</option>
-                        <option value="G">G</option>
-                        <option value="GG">GG</option>
-                    </select>
-
-                    <button id="addButton3" class="btn btn-add" disabled>Adicionar</button>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
     <!-- RODAPÉ -->
     <footer id="contato">
         <p>&copy; New Hope Administrador</p>
@@ -348,10 +367,8 @@
         </div>
     </footer>
 
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<!-- JAVA-SCRIPT -->
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
